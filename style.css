@@ -38,8 +38,22 @@ body {
 .main {
 	width: 100%;
 }
-.prizeText {
+.prizeText1 {
 	font-size: 30px;
+	font-family: sans-serif;
+	color: #fff;
+	text-align: center;
+	margin-top: 100px;
+}
+.prizeText2 {
+	font-size: 100px;
+	font-family: sans-serif;
+	color: #fff;
+	text-align: center;
+	margin-top: 100px;
+}
+.prizeText3 {
+	font-size: 60px;
 	font-family: sans-serif;
 	color: #fff;
 	text-align: center;

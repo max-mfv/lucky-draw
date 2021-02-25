@@ -1,5 +1,6 @@
 var btn = document.getElementById('wrapper'),
 	text = document.getElementById('text'),
+	free = document.getElementById('free'),
 	winnerEl = document.getElementById('winner')
 	// data = ["村田 一輝", "池田 奈々"],
 	btnDeColor = '#FFEB3B',
@@ -16,6 +17,8 @@ btn.onclick=readCsv;
 function play() {
 	clearInterval(timer);
 	btn.disabled = true;
+	winnerEl.innerHTML = ''
+	free.innerHTML = 'Đang quay..'
 
 	timer = setInterval(function(){
 		var random = Math.floor(Math.random() * array.length);
@@ -34,7 +37,7 @@ function stop() {
 	clearInterval(timer);
 	btn.disabled = false;
 	console.log(winner);
-	text.innerHTML = "Chúc mứng !!!";
+	free.innerHTML = "Chúc mừng !!!";
 	winnerEl.innerHTML = array[winner].name;
 	// btn.style.backgroundColor = btnDeColor;
 	// btn.innerHTML = btnText1;
